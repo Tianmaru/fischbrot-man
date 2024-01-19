@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctkr16maxs8xr"]
+
+[ext_resource type="Texture2D" uid="uid://u0unirekly17" path="res://fish/bubble.png" id="1_b4tnu"]
+
+[sub_resource type="Gradient" id="Gradient_rcxrw"]
+colors = PackedColorArray(0.568627, 0.776471, 1, 1, 0, 0.756863, 1, 0)
+
+[node name="Bubbles" type="CPUParticles2D"]
+emitting = false
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+texture = ExtResource("1_b4tnu")
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 18.0
+initial_velocity_max = 18.0
+angular_velocity_min = 18.0
+angular_velocity_max = 18.0
+scale_amount_min = 0.1
+scale_amount_max = 0.4
+color_ramp = SubResource("Gradient_rcxrw")
